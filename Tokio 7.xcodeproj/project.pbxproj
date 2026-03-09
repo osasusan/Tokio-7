@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4811FC2B2F3D415D0079512A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4811FC292F3D41530079512A /* WebKit.framework */; };
+		483C44D92F5F1D5300AA8F08 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483C44D82F5F1D5300AA8F08 /* SafariServices.framework */; };
+		483C44DB2F5F1D5F00AA8F08 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483C44DA2F5F1D5F00AA8F08 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4811FC102F3D3F9C0079512A /* Tokio 7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tokio 7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4811FC292F3D41530079512A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		483C44D82F5F1D5300AA8F08 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		483C44DA2F5F1D5F00AA8F08 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483C44D92F5F1D5300AA8F08 /* SafariServices.framework in Frameworks */,
+				4811FC2B2F3D415D0079512A /* WebKit.framework in Frameworks */,
+				483C44DB2F5F1D5F00AA8F08 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				4811FC122F3D3F9C0079512A /* Tokio 7 */,
+				4811FC282F3D41530079512A /* Frameworks */,
 				4811FC112F3D3F9C0079512A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +69,16 @@
 				4811FC102F3D3F9C0079512A /* Tokio 7.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4811FC282F3D41530079512A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				483C44DA2F5F1D5F00AA8F08 /* MessageUI.framework */,
+				483C44D82F5F1D5300AA8F08 /* SafariServices.framework */,
+				4811FC292F3D41530079512A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +176,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -185,6 +209,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
